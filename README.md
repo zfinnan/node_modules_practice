@@ -11,8 +11,8 @@
 
 ## Experiment with implementing a package
 
-* Find a [npm](https://www.npmjs.com/) that looks interesting
-* Experiment with incorporating it into this node project, just like we did with moment
+* Find 3 [npm](https://www.npmjs.com/) packages that look interesting
+* Experiment with incorporating them into this node project, just like we did with moment
 
 ## Add to your Node app instructions readme
 
