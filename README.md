@@ -1,25 +1,44 @@
-# Node Modules Practice
+Creating a module:
 
-- [ ] Fork and clone this repo
-- [ ] Initialize node in your cloned repo so it becomes a node project!
+To create a node module, you must first create a package.json file on the command line and prvide the name and version. 
 
-## Make your own module
+Then you must create the file that will be loaded when your module is required by another application. You can do this by adding a function as a property of the exports object. 
 
-- [ ] Create a node module that stores an array of your favorite foods
-- [ ] Import that module into your `index.js`
-- [ ] Write code in your `index.js` so when you run your app, it loops through the array, printing all of your favorite foods to the console
+You can publish your package to npm by using 
 
-## Experiment with implementing a package
+```
+npm publish
+``` 
 
-- [ ] Find 3 [npm](https://www.npmjs.com/) packages that look interesting
-- [ ] Experiment with incorporating them into this node project, just like we did with moment
+Importing modules:
 
-## Add to your Node app instructions readme
+Importing most modules is a matter of using the correct install command.
+For instance, to install the module I used to determine if a number is prime: 
 
-- [ ] Add notes about how to create and import node modules to your Node/Express app readme, along with instructions about adding a `.gitignore`
-- [ ] Paste the link to your repo in this the readme of this assignment
+```
+npm i my-prime
+``` 
 
-## Finally, .gitignore and submit a PR!
+You can then use the modules and run javascript in the command prompt.
 
-- [ ] Add a `.gitignore` to this assignment, so the `node_modules` folder doesn't upload to Github
-- [ ] Submit this assignment by making a `pull request`
+```
+console.log(pr.isPrime(1021));
+=> true
+```
+
+Adding a .gitignore:
+
+.gitignores are used to ensure files untracked by git remain untracked.
+The simplest way to add one is to 
+```
+touch .gitignore
+```
+and define a single .gitignore file in the root.
+
+You can even define a global Git ignore in your home directory for all repositories on your local system by setting the Git ```core.excludesFile``` property
+
+```
+touch ~/.gitignore $ git config --global core.excludesFile ~/.gitignore 
+```
+
+https://github.com/zfinnan/node_modules_practice
